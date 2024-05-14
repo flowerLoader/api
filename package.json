@@ -2,7 +2,7 @@
   "name": "@flowerloader/api",
   "version": "1.0.0",
   "description": "API refs/functions for the flower plugin loader",
-  "main": "FlowerAPI.ts",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
