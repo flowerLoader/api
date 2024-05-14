@@ -1,5 +1,2 @@
 # Flowerteam API
-API refs/functions for the flower plugin loader
-
-# Installing
-Use NPM, dummy
+This package contains API type and function definitions for the flower plugin loader
