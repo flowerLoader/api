@@ -1,0 +1,19 @@
+{
+  "name": "@flowerloader/api",
+  "version": "1.0.0",
+  "description": "API refs/functions for the flower plugin loader",
+  "main": "FlowerAPI.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flowerLoader/api.git"
+  },
+  "author": "Robin",
+  "license": "CC-BY-NC-4.0",
+  "bugs": {
+    "url": "https://github.com/flowerLoader/api/issues"
+  },
+  "homepage": "https://github.com/flowerLoader/api#readme"
+}
