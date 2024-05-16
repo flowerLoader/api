@@ -1,6 +1,6 @@
 {
   "name": "@flowerloader/api",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "API refs/functions for the flower plugin loader",
   "main": "Index.ts",
   "scripts": {

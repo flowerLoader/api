@@ -1,4 +1,5 @@
 import { PatchFn, Patchable } from "./FlowerPatch"
+import { FlowerModule } from "./FlowerPlugin"
 
 export type FlowerAPI = {
   /**
@@ -13,4 +14,10 @@ export type FlowerAPI = {
 
   // Returns the main game object
   GetGameMain: () => any
+}
+
+export function isModule(thing: any): thing is FlowerModule
+{
+  const temp = thing as FlowerModule;
+  return (temp.META !== undefined) && (temp.default !== undefined) && (temp.default.constructor !== undefined)
 }
