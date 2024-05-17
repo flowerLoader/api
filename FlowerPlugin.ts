@@ -54,3 +54,19 @@ export type FlowerModule =
     META: FlowerMeta;
     default: IFlowerPluginFactory
   }
+
+export abstract class BasePlugin<T> implements IFlowerPlugin
+{
+  flower: FlowerAPI;
+  logger: LogSource;
+  gameData: T;
+
+  constructor(flower: FlowerAPI, logger: LogSource)
+  {
+    this.flower = flower;
+    this.logger = logger;
+    this.gameData = flower.GetGameMain();
+  }
+
+  abstract Awake(): void;
+}
