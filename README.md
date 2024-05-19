@@ -1,4 +1,4 @@
-<h1>Flower Loader CLI</h1>
+<h1>Flower Loader API</h1>
 
 ![Static Badge](https://img.shields.io/badge/Language-Typescript_ESM-blue?style=for-the-badge&logo=typescript)
 
@@ -26,7 +26,7 @@ by [kuetaro (くえたろう)](https://store.steampowered.com/curator/44822906)
 
 ## Installing
 ### From a released version
-Flower API is already referenced in every plugin cloned from our [Template Plugin](https://github.com/flowerLoader/plugintemplate). Activating it is as simple as running NPM install in the source directory of your plugin.
+Flower API is already referenced in every plugin cloned from our [Template Plugin](https://github.com/flowerLoader/plugintemplate). Activating it is as simple as running `npm install` in the source directory of your plugin.
 
 ### From a preview version
 First, clone the branch of the preview API with `git clone`. Navigate to your existing Flower API based project and remove the API with `npm remove @flowerloader/api` and then install the local version with `npm install @flowerloader/api /path/to/cloned/repo`. Note that preview version should only be used to _preview_ upcoming features and __not__ in release-ready plugins as preview APIs are subject to rapid, breaking change at Robin's whim.
