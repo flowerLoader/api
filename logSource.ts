@@ -10,6 +10,7 @@ export class LogSource
   {
     this.logID = myID;
     this.writer = myWriter;
+    this.debugWriter = myDebugWriter;
 
     if (!myWriter)
       throw new Error("Writer expected in LogSource.ctor");
