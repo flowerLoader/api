@@ -28,7 +28,7 @@ export type FlowerMeta =
     ENABLED: boolean
   }
 
-export interface IFlowerPluginFactory
+export interface IFlowerPluginFactory<T>
 {
   /**
    * Flower will pass you a flowerAPI and LogSource as your plugin is created
@@ -36,7 +36,7 @@ export interface IFlowerPluginFactory
    * there is no way to access other plugins metadata/etc here.
    * Flower and the logger are loaded. Other plugins may still be loading
    */
-  new(flower: FlowerAPI, logger: LogSource): IFlowerPlugin
+  new(flower: FlowerAPI<T>, logger: LogSource): IFlowerPlugin
 }
 
 export interface IFlowerPlugin
@@ -52,5 +52,21 @@ export interface IFlowerPlugin
 export type FlowerModule =
   {
     META: FlowerMeta;
-    default: IFlowerPluginFactory
+    default: IFlowerPluginFactory<any>
   }
+
+export abstract class BasePlugin<T> implements IFlowerPlugin
+{
+  flower: FlowerAPI<T>;
+  logger: LogSource;
+  gameData: T;
+
+  constructor(flower: FlowerAPI<T>, logger: LogSource)
+  {
+    this.flower = flower;
+    this.logger = logger;
+    this.gameData = flower.GetGameMain();
+  }
+
+  abstract Awake(): void;
+}

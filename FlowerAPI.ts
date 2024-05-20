@@ -1,7 +1,7 @@
 import { PatchFn, Patchable } from "./FlowerPatch"
 import { FlowerModule } from "./FlowerPlugin"
 
-export type FlowerAPI = {
+export type FlowerAPI<T> = {
   /**
    * Register a patch for a method on an object with a prefix or postfix
    * @param obj
@@ -13,7 +13,7 @@ export type FlowerAPI = {
   RegisterPatch: (obj: Patchable, methodName: string, patch: PatchFn, isPrefix: boolean) => boolean
 
   // Returns the main game object
-  GetGameMain: () => any
+  GetGameMain: () => T
 }
 
 export function isModule(thing: any): thing is FlowerModule

@@ -10,4 +10,5 @@ export type FlowerPatch = {
   methodName: string
   prefixes: PatchFn[]
   postfixes: PatchFn[]
+  applied: boolean
 }
