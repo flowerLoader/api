@@ -12,10 +12,19 @@ export type FlowerAPI<T> = {
    */
   RegisterPatch: (obj: Patchable, methodName: string, patch: PatchFn, isPrefix: boolean) => boolean
 
-  // Returns the main game object
+  /**
+   * This function and its return object will be defined per supported game by 
+   * the individual game's support file in core/gamesupport/\<gameid\>.ts
+   * @returns An object containing important/common game objects
+   */
   GetGameMain: () => T
 }
 
+/**
+ * 
+ * @param thing any object
+ * @returns `true` if thing conforms to FlowerModule, `false` otherwise
+ */
 export function isModule(thing: any): thing is FlowerModule
 {
   const temp = thing as FlowerModule;
