@@ -1,19 +1,19 @@
 {
-  "name": "@flowerloader/api",
-  "version": "1.2.0",
-  "description": "API refs/functions for the flower plugin loader",
-  "main": "Index.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/flowerLoader/api.git"
-  },
-  "author": "Robin",
-  "license": "CC BY-NC-SA 4.0",
-  "bugs": {
-    "url": "https://github.com/flowerLoader/api/issues"
-  },
-  "homepage": "https://github.com/flowerLoader/api#readme"
+	"name": "@flowerloader/api",
+	"version": "1.2.0",
+	"description": "API refs/functions for the flower plugin loader",
+	"main": "Index.ts",
+	"scripts": {
+		"test": "bun test"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/flowerLoader/api.git"
+	},
+	"author": "Robin",
+	"license": "CC BY-NC-SA 4.0",
+	"bugs": {
+		"url": "https://github.com/flowerLoader/api/issues"
+	},
+	"homepage": "https://github.com/flowerLoader/api#readme"
 }
