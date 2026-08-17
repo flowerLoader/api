@@ -16,5 +16,8 @@
 		"url": "https://github.com/flowerLoader/api/issues"
 	},
 	"homepage": "https://github.com/flowerLoader/api#readme",
-	"packageManager": "bun@1.3.14"
+	"packageManager": "bun@1.3.14",
+	"devDependencies": {
+		"@biomejs/biome": "<=2.5.7 || >2.5.9"
+	}
 }
