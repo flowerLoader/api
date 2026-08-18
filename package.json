@@ -4,6 +4,7 @@
 	"description": "API refs/functions for the flower plugin loader",
 	"main": "Index.ts",
 	"scripts": {
+		"lint": "biome check .",
 		"test": "bun test"
 	},
 	"repository": {
@@ -18,6 +19,7 @@
 	"homepage": "https://github.com/flowerLoader/api#readme",
 	"packageManager": "bun@1.3.14",
 	"devDependencies": {
-		"@biomejs/biome": "<=2.5.7 || >2.5.9"
+		"@biomejs/biome": "<=2.5.7 || >2.5.9",
+		"turbo": "^2.10.10"
 	}
 }

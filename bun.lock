@@ -6,6 +6,7 @@
       "name": "@flowerloader/api",
       "devDependencies": {
         "@biomejs/biome": "<=2.5.7 || >2.5.9",
+        "turbo": "^2.10.10",
       },
     },
   },
@@ -27,5 +28,19 @@
     "@biomejs/cli-win32-arm64": ["@biomejs/cli-win32-arm64@2.5.7", "", { "os": "win32", "cpu": "arm64" }, "sha512-Oq4x0CCwP4jirrcTywXs5kOGZ4v5vuEP+gWrbtjApOA2CL9F3F9GlIdQIci8AKSCa/zURanMRpX/4wQ7Am6hHg=="],
 
     "@biomejs/cli-win32-x64": ["@biomejs/cli-win32-x64@2.5.7", "", { "os": "win32", "cpu": "x64" }, "sha512-V+0wu/nrj2S+MhP4EQ0uHNolP0IALEsz45pg0WoKkHfDeh0+ItHwP/p7bX5RPoMOl9NkpHYWdYPhIcy2mACHvQ=="],
+
+    "@turbo/darwin-64": ["@turbo/darwin-64@2.10.10", "", { "os": "darwin", "cpu": "x64" }, "sha512-gFDD+wRP5hWxBRghGyEbjpbLOY7aIU/wvsnKdMM7odQcp/wHMrnI83p0FyxxMRZnFH9ZD+S59MvcpOC5b+nrCA=="],
+
+    "@turbo/darwin-arm64": ["@turbo/darwin-arm64@2.10.10", "", { "os": "darwin", "cpu": "arm64" }, "sha512-VZYsxZ6yjyDosUqtiroAVSXPLmx/qBxdHJgIxdMH9RyNmLdOLOWtJnYMnI4qckwCgQMK85G3fu94/xk5+iBCgw=="],
+
+    "@turbo/linux-64": ["@turbo/linux-64@2.10.10", "", { "os": [ "linux", "android", ], "cpu": "x64" }, "sha512-lAvW+yEnmsCKMEIwNugjozawvYytHKPhU0kfLBizu83MIs8OUb9KobYvkZ56L5akSM6K7+gBFLEIfQkaceh90g=="],
+
+    "@turbo/linux-arm64": ["@turbo/linux-arm64@2.10.10", "", { "os": [ "linux", "android", ], "cpu": "arm64" }, "sha512-MSJ+NkRTd79Z9+YEZpUV9VOWVOOigFhE+v/ETNYJEuTJp3r00y9YgFvDXrmM+DP8Kal6tk3U6xSugD2/Ojh+Jg=="],
+
+    "@turbo/windows-64": ["@turbo/windows-64@2.10.10", "", { "os": "win32", "cpu": "x64" }, "sha512-ycWpXDkUfnDFDY9d+4Qna/UZotDB0wj+s9agrlmNt0Q7a3XHORhK8GPKJdzgzeutXu9EW5P/jyabTEHlohuDXw=="],
+
+    "@turbo/windows-arm64": ["@turbo/windows-arm64@2.10.10", "", { "os": "win32", "cpu": "arm64" }, "sha512-PMk6zQN0csUFklLe+1hz/5G9uU1YmV0cEIey2R/bSeA6o69qcBTlN4A3jOqkgenOO5dOpMHmq2sEUZo8r1+Ssg=="],
+
+    "turbo": ["turbo@2.10.10", "", { "optionalDependencies": { "@turbo/darwin-64": "2.10.10", "@turbo/darwin-arm64": "2.10.10", "@turbo/linux-64": "2.10.10", "@turbo/linux-arm64": "2.10.10", "@turbo/windows-64": "2.10.10", "@turbo/windows-arm64": "2.10.10" }, "bin": { "turbo": "bin/turbo" } }, "sha512-/90KTW+USzvYOPmafRZHVKLBsHXQ5810Ao/HdtJYAqguIhZ+XruS6eIUjqJUDtrSxaZYynNFht68qckGKAOWTA=="],
   }
 }
